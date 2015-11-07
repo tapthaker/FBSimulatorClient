@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFF8DB3D1BEE719200C6EAE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8DB3C1BEE719200C6EAE4 /* AppDelegate.m */; };
+		FFF8DB3F1BEE719200C6EAE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8DB3E1BEE719200C6EAE4 /* main.m */; };
+		FFF8DB411BEE719200C6EAE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF8DB401BEE719200C6EAE4 /* Images.xcassets */; };
+		FFF8DB441BEE719200C6EAE4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF8DB421BEE719200C6EAE4 /* MainMenu.xib */; };
+		FFF8DB501BEE719200C6EAE4 /* FBSimulatorCLITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8DB4F1BEE719200C6EAE4 /* FBSimulatorCLITests.m */; };
+		FFF8DB5B1BEE71C900C6EAE4 /* FBSimulatorControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */; };
+		FFF8DB5D1BEE71DD00C6EAE4 /* FBSimulatorControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFF8DB4A1BEE719200C6EAE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8DB2E1BEE719200C6EAE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF8DB351BEE719200C6EAE4;
+			remoteInfo = FBSimulatorCLI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFF8DB5C1BEE71D300C6EAE4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FFF8DB5D1BEE71DD00C6EAE4 /* FBSimulatorControl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FFF8DB361BEE719200C6EAE4 /* FBSimulatorCLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBSimulatorCLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF8DB3A1BEE719200C6EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF8DB3B1BEE719200C6EAE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFF8DB3C1BEE719200C6EAE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFF8DB3E1BEE719200C6EAE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFF8DB401BEE719200C6EAE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FFF8DB431BEE719200C6EAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FFF8DB491BEE719200C6EAE4 /* FBSimulatorCLITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBSimulatorCLITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF8DB4E1BEE719200C6EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF8DB4F1BEE719200C6EAE4 /* FBSimulatorCLITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBSimulatorCLITests.m; sourceTree = "<group>"; };
+		FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSimulatorControl.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFF8DB331BEE719200C6EAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF8DB5B1BEE71C900C6EAE4 /* FBSimulatorControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF8DB461BEE719200C6EAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFF8DB2D1BEE719200C6EAE4 = {
+			isa = PBXGroup;
+			children = (
+				FFF8DB381BEE719200C6EAE4 /* FBSimulatorCLI */,
+				FFF8DB4C1BEE719200C6EAE4 /* FBSimulatorCLITests */,
+				FFF8DB371BEE719200C6EAE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFF8DB371BEE719200C6EAE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8DB361BEE719200C6EAE4 /* FBSimulatorCLI.app */,
+				FFF8DB491BEE719200C6EAE4 /* FBSimulatorCLITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFF8DB381BEE719200C6EAE4 /* FBSimulatorCLI */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8DB3B1BEE719200C6EAE4 /* AppDelegate.h */,
+				FFF8DB3C1BEE719200C6EAE4 /* AppDelegate.m */,
+				FFF8DB401BEE719200C6EAE4 /* Images.xcassets */,
+				FFF8DB421BEE719200C6EAE4 /* MainMenu.xib */,
+				FFF8DB391BEE719200C6EAE4 /* Supporting Files */,
+			);
+			path = FBSimulatorCLI;
+			sourceTree = "<group>";
+		};
+		FFF8DB391BEE719200C6EAE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8DB591BEE71C900C6EAE4 /* Frameworks */,
+				FFF8DB3A1BEE719200C6EAE4 /* Info.plist */,
+				FFF8DB3E1BEE719200C6EAE4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFF8DB4C1BEE719200C6EAE4 /* FBSimulatorCLITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8DB4F1BEE719200C6EAE4 /* FBSimulatorCLITests.m */,
+				FFF8DB4D1BEE719200C6EAE4 /* Supporting Files */,
+			);
+			path = FBSimulatorCLITests;
+			sourceTree = "<group>";
+		};
+		FFF8DB4D1BEE719200C6EAE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8DB4E1BEE719200C6EAE4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFF8DB591BEE71C900C6EAE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFF8DB351BEE719200C6EAE4 /* FBSimulatorCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF8DB531BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorCLI" */;
+			buildPhases = (
+				FFF8DB321BEE719200C6EAE4 /* Sources */,
+				FFF8DB331BEE719200C6EAE4 /* Frameworks */,
+				FFF8DB341BEE719200C6EAE4 /* Resources */,
+				FFF8DB5C1BEE71D300C6EAE4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSimulatorCLI;
+			productName = FBSimulatorCLI;
+			productReference = FFF8DB361BEE719200C6EAE4 /* FBSimulatorCLI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFF8DB481BEE719200C6EAE4 /* FBSimulatorCLITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF8DB561BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorCLITests" */;
+			buildPhases = (
+				FFF8DB451BEE719200C6EAE4 /* Sources */,
+				FFF8DB461BEE719200C6EAE4 /* Frameworks */,
+				FFF8DB471BEE719200C6EAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFF8DB4B1BEE719200C6EAE4 /* PBXTargetDependency */,
+			);
+			name = FBSimulatorCLITests;
+			productName = FBSimulatorCLITests;
+			productReference = FFF8DB491BEE719200C6EAE4 /* FBSimulatorCLITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFF8DB2E1BEE719200C6EAE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = TT;
+				TargetAttributes = {
+					FFF8DB351BEE719200C6EAE4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					FFF8DB481BEE719200C6EAE4 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FFF8DB351BEE719200C6EAE4;
+					};
+				};
+			};
+			buildConfigurationList = FFF8DB311BEE719200C6EAE4 /* Build configuration list for PBXProject "FBSimulatorCLI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFF8DB2D1BEE719200C6EAE4;
+			productRefGroup = FFF8DB371BEE719200C6EAE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFF8DB351BEE719200C6EAE4 /* FBSimulatorCLI */,
+				FFF8DB481BEE719200C6EAE4 /* FBSimulatorCLITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFF8DB341BEE719200C6EAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF8DB411BEE719200C6EAE4 /* Images.xcassets in Resources */,
+				FFF8DB441BEE719200C6EAE4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF8DB471BEE719200C6EAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFF8DB321BEE719200C6EAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF8DB3F1BEE719200C6EAE4 /* main.m in Sources */,
+				FFF8DB3D1BEE719200C6EAE4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF8DB451BEE719200C6EAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF8DB501BEE719200C6EAE4 /* FBSimulatorCLITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFF8DB4B1BEE719200C6EAE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFF8DB351BEE719200C6EAE4 /* FBSimulatorCLI */;
+			targetProxy = FFF8DB4A1BEE719200C6EAE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFF8DB421BEE719200C6EAE4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFF8DB431BEE719200C6EAE4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFF8DB511BEE719200C6EAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FFF8DB521BEE719200C6EAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FFF8DB541BEE719200C6EAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/PrivateFrameworks",
+					"$(DEVELOPER_DIR)/../SharedFrameworks",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(OTHER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = FBSimulatorCLI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"\"$DEVELOPER_LIBRARY_DIR/Frameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_LIBRARY_DIR/PrivateFrameworks\"",
+					"-rpath",
+					"\"$SDKROOT/System/Library/PrivateFrameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_DIR/../SharedFrameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_DIR/../Frameworks\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFF8DB551BEE719200C6EAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/PrivateFrameworks",
+					"$(DEVELOPER_DIR)/../SharedFrameworks",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(OTHER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = FBSimulatorCLI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"\"$DEVELOPER_LIBRARY_DIR/Frameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_LIBRARY_DIR/PrivateFrameworks\"",
+					"-rpath",
+					"\"$SDKROOT/System/Library/PrivateFrameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_DIR/../SharedFrameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_DIR/../Frameworks\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FFF8DB571BEE719200C6EAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FBSimulatorCLITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBSimulatorCLI.app/Contents/MacOS/FBSimulatorCLI";
+			};
+			name = Debug;
+		};
+		FFF8DB581BEE719200C6EAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FBSimulatorCLITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBSimulatorCLI.app/Contents/MacOS/FBSimulatorCLI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFF8DB311BEE719200C6EAE4 /* Build configuration list for PBXProject "FBSimulatorCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF8DB511BEE719200C6EAE4 /* Debug */,
+				FFF8DB521BEE719200C6EAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF8DB531BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF8DB541BEE719200C6EAE4 /* Debug */,
+				FFF8DB551BEE719200C6EAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFF8DB561BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorCLITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF8DB571BEE719200C6EAE4 /* Debug */,
+				FFF8DB581BEE719200C6EAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFF8DB2E1BEE719200C6EAE4 /* Project object */;
+}
