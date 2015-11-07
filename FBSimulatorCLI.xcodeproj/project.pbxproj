@@ -14,6 +14,7 @@
 		FFF8DB501BEE719200C6EAE4 /* FBSimulatorCLITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8DB4F1BEE719200C6EAE4 /* FBSimulatorCLITests.m */; };
 		FFF8DB5B1BEE71C900C6EAE4 /* FBSimulatorControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */; };
 		FFF8DB5D1BEE71DD00C6EAE4 /* FBSimulatorControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFF8DB631BEE7EE100C6EAE4 /* ArgumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8DB621BEE7EE100C6EAE4 /* ArgumentParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		FFF8DB4E1BEE719200C6EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFF8DB4F1BEE719200C6EAE4 /* FBSimulatorCLITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBSimulatorCLITests.m; sourceTree = "<group>"; };
 		FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSimulatorControl.framework; sourceTree = "<group>"; };
+		FFF8DB611BEE7EE100C6EAE4 /* ArgumentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArgumentParser.h; sourceTree = "<group>"; };
+		FFF8DB621BEE7EE100C6EAE4 /* ArgumentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArgumentParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				FFF8DB401BEE719200C6EAE4 /* Images.xcassets */,
 				FFF8DB421BEE719200C6EAE4 /* MainMenu.xib */,
 				FFF8DB391BEE719200C6EAE4 /* Supporting Files */,
+				FFF8DB611BEE7EE100C6EAE4 /* ArgumentParser.h */,
+				FFF8DB621BEE7EE100C6EAE4 /* ArgumentParser.m */,
 			);
 			path = FBSimulatorCLI;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF8DB631BEE7EE100C6EAE4 /* ArgumentParser.m in Sources */,
 				FFF8DB3F1BEE719200C6EAE4 /* main.m in Sources */,
 				FFF8DB3D1BEE719200C6EAE4 /* AppDelegate.m in Sources */,
 			);
@@ -470,6 +476,7 @@
 				FFF8DB551BEE719200C6EAE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFF8DB561BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorCLITests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				FFF8DB581BEE719200C6EAE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
