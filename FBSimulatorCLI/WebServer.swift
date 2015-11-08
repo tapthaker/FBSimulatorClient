@@ -6,7 +6,8 @@ class WebServer : NSObject {
     private let portNumber : UInt
     
     private let handlers = [ ["method":"POST","path":"/simulator/launch", "handler":LaunchRequestHandler()],
-        ["method":"POST","path":"/simulator/kill", "handler" : KillRequestHandler()]]
+        ["method":"POST","path":"/simulator/kill", "handler" : KillRequestHandler()],
+    ["method":"PUT","path":"/control", "handler" : ControlHandler()]]
     
     init(port: UInt) {
         webserver = GCDWebServer()

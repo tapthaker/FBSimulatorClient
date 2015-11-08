@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		934B20AAB385BC68DFAC28BC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265863029E5263540041DF39 /* libPods.a */; };
 		FF15E8461BEF7A1C0070635D /* KillRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E8451BEF7A1C0070635D /* KillRequestHandler.swift */; };
+		FF15E84B1BEF8FA30070635D /* ControlHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E84A1BEF8FA30070635D /* ControlHandler.swift */; };
 		FFCA13D61BEF34B200A9F161 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA13D51BEF34B200A9F161 /* RequestHandler.swift */; };
 		FFCA13D81BEF364C00A9F161 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA13D71BEF364C00A9F161 /* Either.swift */; };
 		FFCA13DA1BEF3A6B00A9F161 /* WebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA13D91BEF3A6B00A9F161 /* WebServer.swift */; };
@@ -50,6 +51,7 @@
 		265863029E5263540041DF39 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0FCFE3CA41CD57D02D5010 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FF15E8451BEF7A1C0070635D /* KillRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KillRequestHandler.swift; sourceTree = "<group>"; };
+		FF15E84A1BEF8FA30070635D /* ControlHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlHandler.swift; sourceTree = "<group>"; };
 		FFCA13D41BEF34B100A9F161 /* FBSimulatorClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBSimulatorClient-Bridging-Header.h"; sourceTree = "<group>"; };
 		FFCA13D51BEF34B200A9F161 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		FFCA13D71BEF364C00A9F161 /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				FFCA13D91BEF3A6B00A9F161 /* WebServer.swift */,
 				FFCA13DB1BEF3FE500A9F161 /* LaunchRequestHandler.swift */,
 				FF15E8451BEF7A1C0070635D /* KillRequestHandler.swift */,
+				FF15E84A1BEF8FA30070635D /* ControlHandler.swift */,
 			);
 			name = Handlers;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			files = (
 				FFF8DB631BEE7EE100C6EAE4 /* ArgumentParser.m in Sources */,
 				FFF8DB3F1BEE719200C6EAE4 /* main.m in Sources */,
+				FF15E84B1BEF8FA30070635D /* ControlHandler.swift in Sources */,
 				FFCA13D61BEF34B200A9F161 /* RequestHandler.swift in Sources */,
 				FF15E8461BEF7A1C0070635D /* KillRequestHandler.swift in Sources */,
 				FFF8DB3D1BEE719200C6EAE4 /* AppDelegate.m in Sources */,
