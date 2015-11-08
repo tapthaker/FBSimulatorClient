@@ -27,7 +27,10 @@ Following are the endpoints which can be hit
   - body     : `{"command" : "quit"}`
   - curl  : `curl -H "Content-Type: application/json" -X PUT -d '{"command":"quit"}' localhost:9898/control`
 
-There are obviously more things to be done. But its a start 
+There are obviously more things to be done. But its a start. Look at the power of this thing - 
+
+![Screenshot](./screen_shot.png)
+
 
 ## Contact
 
