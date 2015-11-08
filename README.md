@@ -13,16 +13,19 @@ Following are the endpoints which can be hit
   - endpoint : /simulator/launch
   - method   : POST
   - body     : `{"simulatorType":"iPhone5s", "appPath":"/path/to/app"}`
+  - curl  : `curl -H "Content-Type: application/json" -X POST -d '{"simulatorType":"iPhone 5s","appPath":"/Users/tapan/awesome-app/Debug-iphonesimulator/awesome.app"}' localhost:9898/simulator/launch`
 
 2. *Kill the simulator(s)*
   - endpoint : /simulator/kill
   - method   : POST
   - body     : `{"processIdentifer" :"Process identifier of the sim to kill"} or nothing to kill all simulators`
+  - curl  : `url -H "Content-Type: application/json" -X PUT -d '{"processIdentifier":"6410"' localhost:9898/control`
 
 3. *Quit the application*
   - endpoint : /control
   - method   : PUT
   - body     : `{"command" : "quit"}`
+  - curl  : `curl -H "Content-Type: application/json" -X PUT -d '{"command":"quit"}' localhost:9898/control`
 
 There are obviously more things to be done. But its a start 
 
