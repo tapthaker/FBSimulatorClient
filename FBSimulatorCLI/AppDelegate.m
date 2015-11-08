@@ -15,7 +15,6 @@
     WebServer *webserver;
 }
 
-@property (weak) IBOutlet NSWindow *window;
 @end
 
 @implementation AppDelegate
