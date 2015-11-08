@@ -13,5 +13,7 @@
 + (instancetype)sharedController;
 
 - (NSInteger)launchSimulatorOfType:(NSString*)simulatorType WithApp:(NSString*)appPath withError:(NSError **)error;
+- (void) killSimulator:(NSUInteger)processIdentifier withError:(NSError**)error;
+- (void) killAllSimulatorsWithError:(NSError**)error;
 
 @end

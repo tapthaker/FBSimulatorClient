@@ -18,9 +18,24 @@
 #import <FBSimulatorControl/FBSimulatorControlConfiguration.h>
 #import <FBSimulatorControl/FBSimulatorSession.h>
 #import <FBSimulatorControl/FBSimulatorSessionInteraction.h>
+#import <FBSimulatorControl/FBSimulatorPool.h>
 
 @interface SimulatorController () {
     FBSimulatorControl *control;
+}
+
+@end
+
+@implementation FBSimulatorPool (Query)
+
+-(FBSimulator*) simulatorWithProcessIdentifier:(NSUInteger)processIdentifier {
+    NSOrderedSet *simulators = self.allSimulators;
+    for (FBSimulator *simulator in simulators) {
+        if (simulator.processIdentifier == processIdentifier) {
+            return simulator;
+        }
+    }
+    return nil;
 }
 
 @end
@@ -65,6 +80,15 @@
     [[[[interaction bootSimulator] installApplication:application] launchApplication:launchConfig]performInteractionWithError:&sessionError];
     
     return session.simulator.processIdentifier;
+}
+
+- (void) killSimulator:(NSUInteger)processIdentifier withError:(NSError**)error{
+    FBSimulator *simulator = [control.simulatorPool simulatorWithProcessIdentifier:processIdentifier];
+    [control.simulatorPool freeSimulator:simulator error:error];
+}
+
+- (void) killAllSimulatorsWithError:(NSError**)error {
+    [control.simulatorPool killAllWithError:error];
 }
 
 
