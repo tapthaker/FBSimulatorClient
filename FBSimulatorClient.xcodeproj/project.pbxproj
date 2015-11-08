@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA5D58938063E49848583202 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8198ABD5550DAEED38EF7A /* libPods.a */; };
+		934B20AAB385BC68DFAC28BC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265863029E5263540041DF39 /* libPods.a */; };
+		FFCA13D61BEF34B200A9F161 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA13D51BEF34B200A9F161 /* RequestHandler.swift */; };
+		FFCA13D81BEF364C00A9F161 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA13D71BEF364C00A9F161 /* Either.swift */; };
+		FFCA13DA1BEF3A6B00A9F161 /* WebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA13D91BEF3A6B00A9F161 /* WebServer.swift */; };
+		FFCA13DC1BEF3FE500A9F161 /* LaunchRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA13DB1BEF3FE500A9F161 /* LaunchRequestHandler.swift */; };
+		FFCA13DF1BEF493300A9F161 /* SimulatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCA13DE1BEF493300A9F161 /* SimulatorController.m */; };
 		FFF8DB3D1BEE719200C6EAE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8DB3C1BEE719200C6EAE4 /* AppDelegate.m */; };
 		FFF8DB3F1BEE719200C6EAE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8DB3E1BEE719200C6EAE4 /* main.m */; };
 		FFF8DB411BEE719200C6EAE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF8DB401BEE719200C6EAE4 /* Images.xcassets */; };
 		FFF8DB441BEE719200C6EAE4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF8DB421BEE719200C6EAE4 /* MainMenu.xib */; };
-		FFF8DB501BEE719200C6EAE4 /* FBSimulatorCLITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8DB4F1BEE719200C6EAE4 /* FBSimulatorCLITests.m */; };
 		FFF8DB5B1BEE71C900C6EAE4 /* FBSimulatorControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */; };
 		FFF8DB5D1BEE71DD00C6EAE4 /* FBSimulatorControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFF8DB631BEE7EE100C6EAE4 /* ArgumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8DB621BEE7EE100C6EAE4 /* ArgumentParser.m */; };
@@ -43,8 +47,15 @@
 
 /* Begin PBXFileReference section */
 		0D965445DA512B7EC807CB96 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		265863029E5263540041DF39 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0FCFE3CA41CD57D02D5010 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		8B8198ABD5550DAEED38EF7A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCA13D41BEF34B100A9F161 /* FBSimulatorClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBSimulatorClient-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFCA13D51BEF34B200A9F161 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		FFCA13D71BEF364C00A9F161 /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		FFCA13D91BEF3A6B00A9F161 /* WebServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServer.swift; sourceTree = "<group>"; };
+		FFCA13DB1BEF3FE500A9F161 /* LaunchRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRequestHandler.swift; sourceTree = "<group>"; };
+		FFCA13DD1BEF493300A9F161 /* SimulatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulatorController.h; sourceTree = "<group>"; };
+		FFCA13DE1BEF493300A9F161 /* SimulatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulatorController.m; sourceTree = "<group>"; };
 		FFF8DB361BEE719200C6EAE4 /* FBSimulatorClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBSimulatorClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF8DB3A1BEE719200C6EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFF8DB3B1BEE719200C6EAE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,7 +65,6 @@
 		FFF8DB431BEE719200C6EAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FFF8DB491BEE719200C6EAE4 /* FBSimulatorClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBSimulatorClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF8DB4E1BEE719200C6EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFF8DB4F1BEE719200C6EAE4 /* FBSimulatorCLITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBSimulatorCLITests.m; sourceTree = "<group>"; };
 		FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSimulatorControl.framework; sourceTree = "<group>"; };
 		FFF8DB611BEE7EE100C6EAE4 /* ArgumentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArgumentParser.h; sourceTree = "<group>"; };
 		FFF8DB621BEE7EE100C6EAE4 /* ArgumentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArgumentParser.m; sourceTree = "<group>"; };
@@ -66,7 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF8DB5B1BEE71C900C6EAE4 /* FBSimulatorControl.framework in Frameworks */,
-				DA5D58938063E49848583202 /* libPods.a in Frameworks */,
+				934B20AAB385BC68DFAC28BC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,9 +102,21 @@
 		67FB17B61AC228BC2B11262C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8B8198ABD5550DAEED38EF7A /* libPods.a */,
+				265863029E5263540041DF39 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFCA13D01BEF335800A9F161 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				FFCA13D51BEF34B200A9F161 /* RequestHandler.swift */,
+				FFCA13D41BEF34B100A9F161 /* FBSimulatorClient-Bridging-Header.h */,
+				FFCA13D71BEF364C00A9F161 /* Either.swift */,
+				FFCA13D91BEF3A6B00A9F161 /* WebServer.swift */,
+				FFCA13DB1BEF3FE500A9F161 /* LaunchRequestHandler.swift */,
+			);
+			name = Handlers;
 			sourceTree = "<group>";
 		};
 		FFF8DB2D1BEE719200C6EAE4 = {
@@ -120,6 +142,7 @@
 		FFF8DB381BEE719200C6EAE4 /* FBSimulatorClient */ = {
 			isa = PBXGroup;
 			children = (
+				FFCA13D01BEF335800A9F161 /* Handlers */,
 				FFF8DB3B1BEE719200C6EAE4 /* AppDelegate.h */,
 				FFF8DB3C1BEE719200C6EAE4 /* AppDelegate.m */,
 				FFF8DB401BEE719200C6EAE4 /* Images.xcassets */,
@@ -127,6 +150,8 @@
 				FFF8DB391BEE719200C6EAE4 /* Supporting Files */,
 				FFF8DB611BEE7EE100C6EAE4 /* ArgumentParser.h */,
 				FFF8DB621BEE7EE100C6EAE4 /* ArgumentParser.m */,
+				FFCA13DD1BEF493300A9F161 /* SimulatorController.h */,
+				FFCA13DE1BEF493300A9F161 /* SimulatorController.m */,
 			);
 			name = FBSimulatorClient;
 			path = FBSimulatorCLI;
@@ -145,7 +170,6 @@
 		FFF8DB4C1BEE719200C6EAE4 /* FBSimulatorClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				FFF8DB4F1BEE719200C6EAE4 /* FBSimulatorCLITests.m */,
 				FFF8DB4D1BEE719200C6EAE4 /* Supporting Files */,
 			);
 			name = FBSimulatorClientTests;
@@ -181,6 +205,7 @@
 				FFF8DB341BEE719200C6EAE4 /* Resources */,
 				FFF8DB5C1BEE71D300C6EAE4 /* CopyFiles */,
 				0A571F7F7D0827FEFC2C7E02 /* Copy Pods Resources */,
+				DB78FD494A18C2C0182B206D /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +321,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		DB78FD494A18C2C0182B206D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -305,7 +345,12 @@
 			files = (
 				FFF8DB631BEE7EE100C6EAE4 /* ArgumentParser.m in Sources */,
 				FFF8DB3F1BEE719200C6EAE4 /* main.m in Sources */,
+				FFCA13D61BEF34B200A9F161 /* RequestHandler.swift in Sources */,
 				FFF8DB3D1BEE719200C6EAE4 /* AppDelegate.m in Sources */,
+				FFCA13DF1BEF493300A9F161 /* SimulatorController.m in Sources */,
+				FFCA13DC1BEF3FE500A9F161 /* LaunchRequestHandler.swift in Sources */,
+				FFCA13D81BEF364C00A9F161 /* Either.swift in Sources */,
+				FFCA13DA1BEF3A6B00A9F161 /* WebServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFF8DB501BEE719200C6EAE4 /* FBSimulatorCLITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +404,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/PrivateFrameworks",
+					"$(DEVELOPER_DIR)/../SharedFrameworks",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(OTHER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -378,6 +430,18 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"\"$DEVELOPER_LIBRARY_DIR/Frameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_LIBRARY_DIR/PrivateFrameworks\"",
+					"-rpath",
+					"\"$SDKROOT/System/Library/PrivateFrameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_DIR/../SharedFrameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_DIR/../Frameworks\"",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -404,6 +468,14 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/PrivateFrameworks",
+					"$(DEVELOPER_DIR)/../SharedFrameworks",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(OTHER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -414,6 +486,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"\"$DEVELOPER_LIBRARY_DIR/Frameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_LIBRARY_DIR/PrivateFrameworks\"",
+					"-rpath",
+					"\"$SDKROOT/System/Library/PrivateFrameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_DIR/../SharedFrameworks\"",
+					"-rpath",
+					"\"$DEVELOPER_DIR/../Frameworks\"",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -423,31 +507,15 @@
 			baseConfigurationReference = 0D965445DA512B7EC807CB96 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/PrivateFrameworks",
-					"$(DEVELOPER_DIR)/../SharedFrameworks",
-					"$(SDKROOT)/System/Library/PrivateFrameworks",
-					"$(OTHER_FRAMEWORKS_DIR)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FBSimulatorCLI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				OTHER_LDFLAGS = (
-					"-rpath",
-					"\"$DEVELOPER_LIBRARY_DIR/Frameworks\"",
-					"-rpath",
-					"\"$DEVELOPER_LIBRARY_DIR/PrivateFrameworks\"",
-					"-rpath",
-					"\"$SDKROOT/System/Library/PrivateFrameworks\"",
-					"-rpath",
-					"\"$DEVELOPER_DIR/../SharedFrameworks\"",
-					"-rpath",
-					"\"$DEVELOPER_DIR/../Frameworks\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = FBSimulatorClient;
+				SWIFT_OBJC_BRIDGING_HEADER = "FBSimulatorCLI/FBSimulatorClient-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -456,31 +524,14 @@
 			baseConfigurationReference = 7F0FCFE3CA41CD57D02D5010 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/PrivateFrameworks",
-					"$(DEVELOPER_DIR)/../SharedFrameworks",
-					"$(SDKROOT)/System/Library/PrivateFrameworks",
-					"$(OTHER_FRAMEWORKS_DIR)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FBSimulatorCLI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				OTHER_LDFLAGS = (
-					"-rpath",
-					"\"$DEVELOPER_LIBRARY_DIR/Frameworks\"",
-					"-rpath",
-					"\"$DEVELOPER_LIBRARY_DIR/PrivateFrameworks\"",
-					"-rpath",
-					"\"$SDKROOT/System/Library/PrivateFrameworks\"",
-					"-rpath",
-					"\"$DEVELOPER_DIR/../SharedFrameworks\"",
-					"-rpath",
-					"\"$DEVELOPER_DIR/../Frameworks\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = FBSimulatorClient;
+				SWIFT_OBJC_BRIDGING_HEADER = "FBSimulatorCLI/FBSimulatorClient-Bridging-Header.h";
 			};
 			name = Release;
 		};

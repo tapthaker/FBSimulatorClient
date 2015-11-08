@@ -8,19 +8,12 @@
 
 #import "AppDelegate.h"
 #import "ArgumentParser.h"
+#import "FBSimulatorClient-Swift.h"
 #import <Foundation/Foundation.h>
-#import <FBSimulatorControl/FBSimulatorControl.h>
-#import <FBSimulatorControl/FBProcessLaunchConfiguration.h>
-#import <FBSimulatorControl/FBSimulator.h>
-#import <FBSimulatorControl/FBSimulatorApplication.h>
-#import <FBSimulatorControl/FBSimulatorConfiguration.h>
-#import <FBSimulatorControl/FBSimulatorControl+Private.h>
-#import <FBSimulatorControl/FBSimulatorControl.h>
-#import <FBSimulatorControl/FBSimulatorControlConfiguration.h>
-#import <FBSimulatorControl/FBSimulatorSession.h>
-#import <FBSimulatorControl/FBSimulatorSessionInteraction.h>
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+    WebServer *webserver;
+}
 
 @property (weak) IBOutlet NSWindow *window;
 @end
@@ -32,13 +25,14 @@
     NSArray *arguments = [[NSProcessInfo processInfo] arguments];
     ArgumentParser *parser = [[ArgumentParser alloc]initWithArguments:arguments];
     
-    if ([parser flagExists:@"--start-test-server"] ) {
+    if ([parser flagExists:@"--start-server"] ) {
         NSString *portNumberString = [parser valueForFlag:@"--port"];
         if (portNumberString != nil) {
             NSScanner *scanner = [NSScanner scannerWithString:portNumberString];
             NSInteger portNumber;
             if ([scanner scanInteger:&portNumber]) {
-                
+                webserver = [[WebServer alloc]initWithPort:portNumber];
+                [webserver startServer];
             } else {
                 [NSException raise:@"Invalid port number" format:@"Invalid port number:%@",portNumberString];
             }
