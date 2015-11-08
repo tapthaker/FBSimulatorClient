@@ -41,14 +41,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FFF8DB361BEE719200C6EAE4 /* FBSimulatorCLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBSimulatorCLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF8DB361BEE719200C6EAE4 /* FBSimulatorClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBSimulatorClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF8DB3A1BEE719200C6EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFF8DB3B1BEE719200C6EAE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFF8DB3C1BEE719200C6EAE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FFF8DB3E1BEE719200C6EAE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFF8DB401BEE719200C6EAE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FFF8DB431BEE719200C6EAE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		FFF8DB491BEE719200C6EAE4 /* FBSimulatorCLITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBSimulatorCLITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF8DB491BEE719200C6EAE4 /* FBSimulatorClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBSimulatorClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF8DB4E1BEE719200C6EAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFF8DB4F1BEE719200C6EAE4 /* FBSimulatorCLITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBSimulatorCLITests.m; sourceTree = "<group>"; };
 		FFF8DB5A1BEE71C900C6EAE4 /* FBSimulatorControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSimulatorControl.framework; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 		FFF8DB371BEE719200C6EAE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FFF8DB361BEE719200C6EAE4 /* FBSimulatorCLI.app */,
-				FFF8DB491BEE719200C6EAE4 /* FBSimulatorCLITests.xctest */,
+				FFF8DB361BEE719200C6EAE4 /* FBSimulatorClient.app */,
+				FFF8DB491BEE719200C6EAE4 /* FBSimulatorClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FFF8DB351BEE719200C6EAE4 /* FBSimulatorCLI */ = {
+		FFF8DB351BEE719200C6EAE4 /* FBSimulatorClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFF8DB531BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorCLI" */;
+			buildConfigurationList = FFF8DB531BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorClient" */;
 			buildPhases = (
 				FFF8DB321BEE719200C6EAE4 /* Sources */,
 				FFF8DB331BEE719200C6EAE4 /* Frameworks */,
@@ -158,14 +158,14 @@
 			);
 			dependencies = (
 			);
-			name = FBSimulatorCLI;
+			name = FBSimulatorClient;
 			productName = FBSimulatorCLI;
-			productReference = FFF8DB361BEE719200C6EAE4 /* FBSimulatorCLI.app */;
+			productReference = FFF8DB361BEE719200C6EAE4 /* FBSimulatorClient.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FFF8DB481BEE719200C6EAE4 /* FBSimulatorCLITests */ = {
+		FFF8DB481BEE719200C6EAE4 /* FBSimulatorClientTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFF8DB561BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorCLITests" */;
+			buildConfigurationList = FFF8DB561BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorClientTests" */;
 			buildPhases = (
 				FFF8DB451BEE719200C6EAE4 /* Sources */,
 				FFF8DB461BEE719200C6EAE4 /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				FFF8DB4B1BEE719200C6EAE4 /* PBXTargetDependency */,
 			);
-			name = FBSimulatorCLITests;
+			name = FBSimulatorClientTests;
 			productName = FBSimulatorCLITests;
-			productReference = FFF8DB491BEE719200C6EAE4 /* FBSimulatorCLITests.xctest */;
+			productReference = FFF8DB491BEE719200C6EAE4 /* FBSimulatorClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FFF8DB311BEE719200C6EAE4 /* Build configuration list for PBXProject "FBSimulatorCLI" */;
+			buildConfigurationList = FFF8DB311BEE719200C6EAE4 /* Build configuration list for PBXProject "FBSimulatorClient" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -212,8 +212,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FFF8DB351BEE719200C6EAE4 /* FBSimulatorCLI */,
-				FFF8DB481BEE719200C6EAE4 /* FBSimulatorCLITests */,
+				FFF8DB351BEE719200C6EAE4 /* FBSimulatorClient */,
+				FFF8DB481BEE719200C6EAE4 /* FBSimulatorClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 /* Begin PBXTargetDependency section */
 		FFF8DB4B1BEE719200C6EAE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FFF8DB351BEE719200C6EAE4 /* FBSimulatorCLI */;
+			target = FFF8DB351BEE719200C6EAE4 /* FBSimulatorClient */;
 			targetProxy = FFF8DB4A1BEE719200C6EAE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -385,7 +385,7 @@
 					"-rpath",
 					"\"$DEVELOPER_DIR/../Frameworks\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FBSimulatorClient;
 			};
 			name = Debug;
 		};
@@ -417,7 +417,7 @@
 					"-rpath",
 					"\"$DEVELOPER_DIR/../Frameworks\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FBSimulatorClient;
 			};
 			name = Release;
 		};
@@ -436,7 +436,7 @@
 				);
 				INFOPLIST_FILE = FBSimulatorCLITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FBSimulatorClientTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBSimulatorCLI.app/Contents/MacOS/FBSimulatorCLI";
 			};
 			name = Debug;
@@ -452,7 +452,7 @@
 				);
 				INFOPLIST_FILE = FBSimulatorCLITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FBSimulatorClientTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBSimulatorCLI.app/Contents/MacOS/FBSimulatorCLI";
 			};
 			name = Release;
@@ -460,7 +460,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FFF8DB311BEE719200C6EAE4 /* Build configuration list for PBXProject "FBSimulatorCLI" */ = {
+		FFF8DB311BEE719200C6EAE4 /* Build configuration list for PBXProject "FBSimulatorClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FFF8DB511BEE719200C6EAE4 /* Debug */,
@@ -469,7 +469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFF8DB531BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorCLI" */ = {
+		FFF8DB531BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FFF8DB541BEE719200C6EAE4 /* Debug */,
@@ -478,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFF8DB561BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorCLITests" */ = {
+		FFF8DB561BEE719200C6EAE4 /* Build configuration list for PBXNativeTarget "FBSimulatorClientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FFF8DB571BEE719200C6EAE4 /* Debug */,
