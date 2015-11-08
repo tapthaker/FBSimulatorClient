@@ -56,7 +56,8 @@ class WebServer : NSObject {
     }
     
     private func dataResponseForError(error :NSError) -> GCDWebServerDataResponse {
-        let dataResponse = GCDWebServerDataResponse(data: NSJSONSerialization.dataWithJSONObject(error.userInfo!, options: NSJSONWritingOptions.allZeros, error: nil) , contentType: "application/json")
+        let errorResponse = ["success":"false","error":error.localizedDescription]
+        let dataResponse = GCDWebServerDataResponse(data: NSJSONSerialization.dataWithJSONObject(errorResponse, options: NSJSONWritingOptions.allZeros, error: nil) , contentType: "application/json")
         dataResponse.statusCode = 500
         return dataResponse
     }
