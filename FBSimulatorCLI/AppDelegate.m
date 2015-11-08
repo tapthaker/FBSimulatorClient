@@ -31,46 +31,21 @@
     
     NSArray *arguments = [[NSProcessInfo processInfo] arguments];
     ArgumentParser *parser = [[ArgumentParser alloc]initWithArguments:arguments];
-    NSUInteger numberOfSimulators = [parser valueForFlag:@"--number-of-simulators"].integerValue;
-    NSString* appPath = [parser valueForFlag:@"--app-path"];
     
-    NSError *appError;
-    FBSimulatorApplication *app = [FBSimulatorApplication applicationWithPath:appPath error:&appError];
-    if (appError) {
-        [NSException raise:@"Error reading the app" format:@"Error:%@",appError.localizedDescription];
+    if ([parser flagExists:@"--start-test-server"] ) {
+        NSString *portNumberString = [parser valueForFlag:@"--port"];
+        if (portNumberString != nil) {
+            NSScanner *scanner = [NSScanner scannerWithString:portNumberString];
+            NSInteger portNumber;
+            if ([scanner scanInteger:&portNumber]) {
+                
+            } else {
+                [NSException raise:@"Invalid port number" format:@"Invalid port number:%@",portNumberString];
+            }
+        } else {
+            [NSException raise:@"Invalid port number" format:@"Please pass a valid port number with --port argument"];
+        }
     }
-    
-    FBSimulatorManagementOptions options =
-    FBSimulatorManagementOptionsDeleteAllOnFirstStart |
-    FBSimulatorManagementOptionsKillSpuriousSimulatorsOnFirstStart |
-    FBSimulatorManagementOptionsDeleteOnFree;
-    
-    NSError *simulatorError;
-    FBSimulatorControlConfiguration *configuration = [FBSimulatorControlConfiguration configurationWithSimulatorApplication:[FBSimulatorApplication simulatorApplicationWithError:&simulatorError] deviceSetPath:nil options:options];
-    if (simulatorError) {
-        [NSException raise:@"Error in finding the simulator application" format:@"Error:%@",simulatorError.localizedDescription];
-    }
-    
-    FBSimulatorControl *control = [[FBSimulatorControl alloc] initWithConfiguration:configuration];
-    
-    NSError *sessionError = nil;
-    FBSimulatorSession *session = [control createSessionForSimulatorConfiguration:FBSimulatorConfiguration.iPhone5 error:&sessionError];
-    
-    FBApplicationLaunchConfiguration *appLaunch = [FBApplicationLaunchConfiguration
-                                                   configurationWithApplication:app
-                                                   arguments:@[]
-                                                   environment:@{}];
-    
-    // System Applications can be launched directly, User applications must be installed first with `installSimulator:`
-    [[[[session.interact
-                      bootSimulator] installApplication:app]
-                     launchApplication:appLaunch]
-                    performInteractionWithError:&sessionError];
-    
-    if (sessionError) {
-        [NSException raise:@"Error in Session" format:@"%@Error:@",sessionError.localizedDescription];
-    }
-
 }
 
 

@@ -25,14 +25,28 @@
 }
 
 -(NSString*)valueForFlag:(NSString*)flag {
-    for (int i = 0 ; i < arguments.count ; i++) {
-        if ([flag isEqualToString:arguments[i]]) {
-            if (i + 1 < arguments.count) {
-                return arguments[i+1];
-            }
-        }
+    NSInteger i = [self indexOfFlag:flag];
+    if (i + 1 < arguments.count) {
+        return arguments[i+1];
     }
     return nil;
+}
+
+-(NSInteger)indexOfFlag:(NSString*)flag {
+    for (NSInteger i = 0 ; i < arguments.count ; i++) {
+        if ([flag isEqualToString:arguments[i]]) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+-(BOOL)flagExists:(NSString*)flag {
+    NSInteger i = [self indexOfFlag:flag];
+    if (i > 0 && i< arguments.count) {
+        return YES;
+    }
+    return NO;
 }
 
 @end

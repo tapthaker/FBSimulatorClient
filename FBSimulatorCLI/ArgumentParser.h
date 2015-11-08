@@ -12,5 +12,6 @@
 
 - (instancetype)initWithArguments:(NSArray*)args;
 -(NSString*)valueForFlag:(NSString*)flag;
+-(BOOL)flagExists:(NSString*)flag;
 
 @end
