@@ -100,8 +100,8 @@
 		FFF8DB2D1BEE719200C6EAE4 = {
 			isa = PBXGroup;
 			children = (
-				FFF8DB381BEE719200C6EAE4 /* FBSimulatorCLI */,
-				FFF8DB4C1BEE719200C6EAE4 /* FBSimulatorCLITests */,
+				FFF8DB381BEE719200C6EAE4 /* FBSimulatorClient */,
+				FFF8DB4C1BEE719200C6EAE4 /* FBSimulatorClientTests */,
 				FFF8DB371BEE719200C6EAE4 /* Products */,
 				149C63F7FB475A1DCBECA351 /* Pods */,
 				67FB17B61AC228BC2B11262C /* Frameworks */,
@@ -117,7 +117,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FFF8DB381BEE719200C6EAE4 /* FBSimulatorCLI */ = {
+		FFF8DB381BEE719200C6EAE4 /* FBSimulatorClient */ = {
 			isa = PBXGroup;
 			children = (
 				FFF8DB3B1BEE719200C6EAE4 /* AppDelegate.h */,
@@ -128,6 +128,7 @@
 				FFF8DB611BEE7EE100C6EAE4 /* ArgumentParser.h */,
 				FFF8DB621BEE7EE100C6EAE4 /* ArgumentParser.m */,
 			);
+			name = FBSimulatorClient;
 			path = FBSimulatorCLI;
 			sourceTree = "<group>";
 		};
@@ -141,12 +142,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FFF8DB4C1BEE719200C6EAE4 /* FBSimulatorCLITests */ = {
+		FFF8DB4C1BEE719200C6EAE4 /* FBSimulatorClientTests */ = {
 			isa = PBXGroup;
 			children = (
 				FFF8DB4F1BEE719200C6EAE4 /* FBSimulatorCLITests.m */,
 				FFF8DB4D1BEE719200C6EAE4 /* Supporting Files */,
 			);
+			name = FBSimulatorClientTests;
 			path = FBSimulatorCLITests;
 			sourceTree = "<group>";
 		};
