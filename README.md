@@ -10,17 +10,19 @@ Once your build the app, you can launch it in command line with the following co
 Following are the endpoints which can be hit 
 
 1. *Launch the simulator*
-endpoint : /simulator/launch
-method   : POST
-body     : `{"simulatorType":"iPhone5s", "appPath":"/path/to/app"}`
+  - endpoint : /simulator/launch
+  - method   : POST
+  - body     : `{"simulatorType":"iPhone5s", "appPath":"/path/to/app"}`
+
 2. *Kill the simulator(s)*
-endpoint : /simulator/kill
-method   : POST
-body     : `{"processIdentifer" :"Process identifier of the sim to kill"} or nothing to kill all simulators`
+  - endpoint : /simulator/kill
+  - method   : POST
+  - body     : `{"processIdentifer" :"Process identifier of the sim to kill"} or nothing to kill all simulators`
+
 3. *Quit the application*
-endpoint : /control
-method   : PUT
-body     : `{"command" : "quit"}`
+  - endpoint : /control
+  - method   : PUT
+  - body     : `{"command" : "quit"}`
 
 There are obviously more things to be done. But its a start 
 
