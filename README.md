@@ -2,6 +2,11 @@
 FBSimulatorClient is a simple way to interface talk to [FBSimulatorControl](https://github.com/facebook/FBSimulatorControl) framework to control  using Rest Web Services.
 FBSimulatorControl is a Mac OS X library for managing and manipulating iOS Simulators.
 
+## Setup ( ๑○ิ﹏○ิ)
+
+The FBSimulatorClient depends a opensource lib called as [GCD WebServer](https://github.com/swisspol/GCDWebServer)
+To install a the dependencies you need [CocoaPods](https://cocoapods.org/). If you don't know whats cocoapods please refer to its [getting started with CocoaPods guide](https://guides.cocoapods.org/using/getting-started.html). The nearest thing that i can tell you is that CocoaPods is like [Maven](https://maven.apache.org/) but for XCode. 
+
 ## Usage (•ิ_•ิ)?
 
 Once your build the app, you can launch it in command line with the following command:
